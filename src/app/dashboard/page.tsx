@@ -23,7 +23,6 @@ import {
   Table,
 } from "@/components/ui/table";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import UserAvatar from "@/components/UserAvatar";
 import MountainIcon from "@/components/MountainIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
 import ShoppingCartIcon from "@/components/icons/ShoppingCartIcon";

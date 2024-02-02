@@ -16,7 +16,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { revalidatePath } from "next/cache";
 
 const formSchema = z.object({
   email_address: z.string().email({ message: "Invalid email address" }),
@@ -96,7 +95,6 @@ export default function SignUpForm() {
       }
       if (completeSignUp.status === "complete") {
         await setActive({ session: completeSignUp.createdSessionId });
-        router.refresh();
         router.replace("/");
       }
     } catch (err: any) {

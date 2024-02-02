@@ -1,5 +1,3 @@
-import exp from "constants";
-
 const SearchIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
